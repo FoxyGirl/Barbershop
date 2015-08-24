@@ -1,0 +1,270 @@
+/*
+font-family: 'PT Sans Narrow', sans-serif;
+*/
+
+body {
+	font-family: "PT Sans Narrow", sans-serif;
+	font-size: 100%; /* Важно для установки 1em / 16px*/
+	line-height: 1.72; /*24px*/
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #fff;
+	background: #070707 url("../images/body_bg.jpg") no-repeat center top;
+}
+
+p {
+	font-size: 0.875em; /* 14px */
+}
+
+.container {
+	width: 940px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+/* Main Header */
+.main_header {
+	background-color: #000;
+	margin-bottom: 57px;
+}
+.main_header a {
+	color: #fff;
+	text-decoration: none;
+}
+.main_nav  ul {
+	float: left;
+	max-width: 760px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.main_nav  li  {
+	float: left;
+	text-align: center;
+}
+.main_nav  a{
+	display: block;
+	padding: 24px 22px;
+	font-size: 1em; /* 16px */
+}
+
+.main_nav  a:hover {
+	background-color: #242424;
+}
+
+.main_nav  .active_nav a:hover {
+	background: none;
+}
+.active_nav a {
+	position: relative;
+}
+.active_nav a:after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	left: 22px;
+	right: 22px;
+	height: 4px;
+	background-color: #fff;
+}
+
+.login {
+	float: right;
+	max-width: 170px;
+}
+
+.login a {
+	display: block;
+	padding: 24px 22px;
+	font-size:  1em; /* 16px */	
+}
+/* Logo */
+.logo {
+	text-align: center;
+	line-height: 0;
+}
+.logo a {
+	color: #fff;
+}
+.logo img {
+	width: 368px;
+	height: 204px;
+}
+/* Section Features */
+.feature_item {
+	float: left;
+	width: 33.33333%;
+	margin: 0;
+	margin-bottom: 80px;
+	text-align: center;
+}
+.feature_item h2 {
+	position: relative;
+	margin: 0;
+	margin-bottom: 35px;
+	padding: 0 20px 50px 20px;	
+	font-size: 1.875em; /* 30px */
+	line-height: 42px; 
+}
+.feature_item h2:after {
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: 3px;
+	left: 50%;
+	margin-left: -10px;
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	-webkit-transform: rotate(45deg); 
+	    -ms-transform: rotate(45deg);
+	        transform: rotate(45deg);			
+}
+.feature_item p {
+	margin: 0;
+	padding: 0 20px;
+	font-size: 0.875em; /* 14px */
+}
+/* index_content */
+.index_content {
+	margin-bottom: 34px;
+	background-color: #f8f5f2;
+	background-image: url("../images/shadow-in-block.png"),
+	url("../images/bg-light-content.jpg");
+	background-repeat: no-repeat, repeat;
+	background-position: center center, top right;
+	color: #000;
+}
+
+.index_news_wrap,
+.photo_gallery_wrap,
+.contact_inform_wrap {
+	float: left;
+	width: 50%;	
+}
+.index_content section {
+	padding: 50px 60px 50px 87px;
+}
+.index_content .photo_gallery {
+	padding: 50px 83px 50px 87px;
+}
+
+.index_content h2 {
+	margin: 0;
+	padding: 0;	
+	padding-bottom: 30px;
+	font-size: 1.875em; /* 30px */
+}
+.index_content p {
+	font-size: 0.875em; /* 14px */	
+	padding: 0;
+	padding-bottom: 25px;
+}
+.index_content ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.index_content li {
+	margin: 0;
+	margin-bottom: 25px;
+	padding: 0;
+}
+.index_content a {
+	display: block;
+	text-decoration: none;
+	font-size: 0.875em; /* 14px */	
+	color: #000;
+}
+.index_content time {
+	font-family: Georgia, Times, serif;
+	text-transform: none;
+	font-style: italic;
+	font-weight: normal;
+}
+.btn {
+	margin: 0;
+	padding: 10px 35px ;
+	font-size: 0.875em; /* 14px */
+	text-transform: uppercase;
+	background: #000;
+	color: #fff;
+	border: none;
+}
+.btn:hover {
+	background: #663d15;
+}
+.btn:disabled {
+	background: #000;
+	opacity: 0.5;
+}
+
+a.btn {
+	display: inline-block;
+	vertical-align: top;
+	color: #fff;	
+}
+
+.photo_gallery li {
+	text-align: center;
+	margin-bottom: 35px;
+}
+
+.photo_gallery img{
+	border: solid 8px #fff;
+	width: 286px;
+	height: 164px;
+	background: #e5e5e5;
+	
+}
+.photo_gallery a{
+	display: block;
+	line-height: 0;
+}
+.gallery_prev {
+	float: left;
+}
+.gallery_next {
+	float: right;
+}
+.contact_inform  h2{
+	padding-right: 40px;
+}
+
+.btn.feedback  {
+	margin-left: 20px;
+	
+}
+
+.main_footer {
+	padding: 46px 0 0 0;
+	background: #222 url("../images/bg-footer.jpg");
+}
+
+.design {
+	float: right;
+	text-align: center;
+}
+
+.design a {
+	text-decoration: none;
+	margin-left: 0;
+}
+	
+.design .btn:hover {
+	background-color: #fff;
+	color: #000;
+
+}
+
+.design p{
+	margin-bottom: 5px;
+}
+
+.address {
+	float: left;
+}
