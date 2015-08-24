@@ -1,0 +1,68 @@
+body {
+    background: #666;
+}
+.sprite {
+    background-image: url(../images/sprite_barbershop.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-icon_checkbox_cheked {
+    width: 12px;
+    height: 12px;
+    background-position: -5px -5px;
+}
+
+.sprite-icon_checkbox_cheked_disabled {
+    width: 12px;
+    height: 12px;
+    background-position: -27px -5px;
+}
+
+.sprite-icon_f {
+    width: 12px;
+    height: 22px;
+    background-position: -49px -5px;
+}
+
+.sprite-icon_f_hover {
+    width: 12px;
+    height: 22px;
+    background-position: -71px -5px;
+}
+
+.sprite-icon_inst {
+    width: 21px;
+    height: 21px;
+    background-position: -93px -5px;
+}
+
+.sprite-icon_inst_hover {
+    width: 21px;
+    height: 21px;
+    background-position: -124px -5px;
+}
+
+.sprite-icon_login {
+    width: 18px;
+    height: 16px;
+    background-position: -155px -5px;
+}
+
+.sprite-icon_login_hover {
+    width: 18px;
+    height: 16px;
+    background-position: -183px -5px;
+}
+
+.sprite-icon_vk {
+    width: 25px;
+    height: 16px;
+    background-position: -211px -5px;
+}
+
+.sprite-icon_vk_hover {
+    width: 25px;
+    height: 16px;
+    background-position: -246px -5px;
+}

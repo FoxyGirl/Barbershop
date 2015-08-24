@@ -290,9 +290,66 @@ a.btn {
 }
 .social_links a {
 	display: block;
+	position: relative;
 	width: 43px;
 	height: 43px;
 }
+
+.social_links a:hover {
+	background-color: #fff;
+}
+
+.sprite {
+    background-image: url(../images/sprite_barbershop.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-icon_f {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -6px;
+	margin-top: -11px;
+    width: 12px;
+    height: 22px;
+    background-position: -49px -5px;
+}
+
+.sprite-icon_vk {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -12px;
+	margin-top: -8px;
+    width: 25px;
+    height: 16px;
+    background-position: -211px -5px;
+}
+
+.sprite-icon_inst {
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -11px;
+	margin-top: -11px;
+    width: 22px;
+    height: 22px;
+    background-position: -92px -5px;	
+}
+
+.social_links a:hover .sprite-icon_f {
+	background-position: -71px -5px;
+}
+
+.social_links a:hover .sprite-icon_vk {
+	background-position: -246px -5px;
+}
+
+.social_links a:hover .sprite-icon_inst {
+	background-position: -124px -5px;
+}
+
 
 .address {
 	float: left;
