@@ -92,8 +92,13 @@
 					<div class="contact_inform">
 						<h2>Записаться</h2>
 						<p>Укажите желаемую дату и время и мы свяжемся с&nbsp;вами для подтверждения брони</p>
-						<a href="#" class="btn">Как проехать</a>
-						<a href="#" class="btn feedback">Обратная связь</a>	
+						<form class="index_form clearfix" action="/echo" method="post">	
+							<input type="text" name="formDate" placeholder="ДАТА" required autofocus>
+							<input type="text" name="formTime" placeholder="ВРЕМЯ" required>
+							<input type="text" name="formName" placeholder="ВАШЕ ИМЯ" required>
+							<input type="tel" name="formPhone" placeholder="ТЕЛЕФОН" pattern="[0-9]{3}-[0-9]{7}" required>
+							<input class="btn" type="submit" value="ОТПРАВИТЬ">
+						</form>
 					</div>			
 				</section>
 		</div>
