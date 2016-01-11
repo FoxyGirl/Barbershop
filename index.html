@@ -145,14 +145,19 @@
 	<div class="modal">
 	</div>
 	<div class="modal-login">
+		<a class="modal-close" href="#">закрыть</a>
 		<form class="form-login" action="some.php" method="post">
-			<h2>ЛИЧНЫЙ КАБИНЕТ</h2>
+			<h2>Личный кабинет</h2>
 			<p>
 				Введите пожалуйста свой логин и пароль<br>
 Если вы забыли пароль
 			</p>
-			<input type="text" placeholder="Логин">
-			<input type="password" placeholder="Пароль"
+			<input type="text" class="icon-user" name="login" placeholder="Логин" required focus>
+			<input type="password" class="icon-password" name="password" placeholder="Пароль" required>
+			<input type="checkbox" name="rememberMe" id="remember-me">
+			<label for="emember-me">Запомните меня</label>
+			<a class="restore" href="#">Я забыл пароль!</a>
+			<button type="submit" class="btn">Войти</button>
 		<form>
 	</div>
   </body>
