@@ -415,8 +415,8 @@ a.btn {
 	min-width: 280px;
 }
 
-/* Modal for Login */
-.modal {
+/* Shadow for Modal */
+.modal-shadow {
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -424,14 +424,14 @@ a.btn {
 	height: 100%;
 	background: #000;
 	opacity: 0.5;
-	z-index: 999;
+	z-index: 2;
 }
-
+/* Modal for Login */
 .modal-login {
 	position: fixed;
 	left: 50%;
 	top: 120px;
-	z-index: 1000;	
+	z-index: 3;	
 	width: 300px;
 	min-height: 300px;
 	padding: 50px 80px;
@@ -540,4 +540,19 @@ a.btn {
 .form-login .btn {
 	width: 100%;
 	margin-top: 15px;
+}
+
+/* Modal for Login */
+.modal-map {
+	position: fixed;
+	z-index: 4;
+	top: 0;
+	left: 50%;
+	width: 766px;
+	height: 561px;
+	margin-left: -390px;
+	margin-top: 100px;
+	background: #e9e5dc url("../images/map_barbershop.png");
+	box-shadow: 0 5px 20px rgba(0,0,0,.75);
+	border: 3px solid #fff;
 }
