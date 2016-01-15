@@ -475,9 +475,13 @@ a.btn {
 
 .form-login input[type="text"],
 .form-login input[type="password"] {
+	position: relative;
 	width: 100%;
 	padding: 10px 15px;
+	padding-right: 40px;
 	margin-bottom: 10px;
+	font-size: 14px;
+	line-height: 24px;
 	text-transform: uppercase;
 	background-color: #f9f6f3;
 	border: solid 2px #000;
@@ -485,8 +489,47 @@ a.btn {
 	outline: 0;
 }
 
+.form-login input.icon-user {
+	background: url("../images/sprite_barbershop.png") no-repeat 260px -19px;	
+}
+
+.form-login input.icon-password {
+	background: url("../images/sprite_barbershop.png") no-repeat 260px -51px;	
+	margin-bottom: 15px;
+}
+
 .form-login input:focus {
 	border-color: #663d15;
+}
+
+.form-login input[type="checkbox"] {
+	display: none;
+}
+
+.form-login input[type="checkbox"] + label {
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	padding-left: 30px;
+	cursor: pointer;
+}
+
+.form-login input[type="checkbox"] + label:hover {
+	color: #663d15;
+}
+
+.form-login input[type="checkbox"] + label::before {
+	content: "";
+	position: absolute;
+	top: 2px;
+	left: 0;
+	width: 18px;
+	height: 18px;
+	border: 2px solid #000;
+}
+
+.form-login input[type="checkbox"]:checked + label::before {
+	background: url("../images/sprite_barbershop.png") no-repeat -2px -2px;
 }
 
 .restore {
@@ -496,4 +539,5 @@ a.btn {
 
 .form-login .btn {
 	width: 100%;
+	margin-top: 15px;
 }
