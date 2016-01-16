@@ -1,6 +1,6 @@
 'use strict'
-var popupLogin = document.querySelector('.modal-login');
 var modalShadow = document.querySelector('.modal-shadow');
+var popupLogin = document.querySelector('.modal-login');
 var linkLogin = document.getElementById('login');
 var popupLoginClose = document.querySelector('.modal-login .modal-close');
 var login = popupLogin.querySelector('[name=login]');
@@ -14,6 +14,8 @@ var linkMap = document.getElementById('map');
 var popupMapClose = document.querySelector('.modal-map .modal-close');
 
 
+login.removeAttribute('required');
+password.removeAttribute('required');
 
 linkLogin.addEventListener('click', function(e) {
 	e.preventDefault();
@@ -29,9 +31,17 @@ linkLogin.addEventListener('click', function(e) {
 });
 
 formLogin.addEventListener('submit', function(e) {
-//	e.preventDefault();
+	e.preventDefault();
+	
+	if (popupLogin.classList.contains('modal-error')) {
+		popupLogin.classList.remove('modal-error');
+console.log(popupLogin.classList.contains('modal-error'));		
+	};
+	
+	
 	if (!(login.value && password.value)) {
-		e.preventDefault();		
+	//	e.preventDefault();	
+		popupLogin.classList.add('modal-error');		
 	} else {
 		localStorage.setItem('login', login.value);
 	};

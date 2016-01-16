@@ -415,6 +415,20 @@ a.btn {
 	min-width: 280px;
 }
 
+@keyframes bounce {
+	0% { transform: translateY(-2000px); }
+	70% { transform: translateY(30px); }
+	90% { transform: translateY(-10px); }
+	100% { transform: translateY(0); }
+}
+
+@keyframes shake {
+	0%, 100%				 { transform: translateX(0); }
+	10%, 30%, 50%, 70%, 90%  { transform: translateX(-10px); }
+	20%, 40%, 60%, 80%               { transform: translateX(10px); }
+}
+
+
 /* Shadow for Modal */
 .modal-shadow {
 	display: none;
@@ -449,8 +463,12 @@ a.btn {
 
 .modal-login.show {
 	display: block;
+	animation: bounce 0.7s;	
 }
 
+.modal-login.modal-error {
+	animation: shake 0.5s;
+}
 .modal-login h2 {
 	font-size: 1.875em; /*30px*/
 	margin-top: 0;
@@ -551,6 +569,7 @@ a.btn {
 .form-login .btn {
 	width: 100%;
 	margin-top: 15px;
+	outline: none;
 }
 
 /* Modal for Login */
@@ -570,4 +589,5 @@ a.btn {
 }
 .modal-map.show {
 	display: block;
+	animation: bounce 0.7s;		
 }
