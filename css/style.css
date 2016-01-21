@@ -583,7 +583,7 @@ a.btn {
 	height: 561px;
 	margin-left: -390px;
 	margin-top: 100px;
-	background: #e9e5dc url("../images/map_barbershop.png");
+/*	background: #e9e5dc url("../images/map_barbershop.png");*/
 	box-shadow: 0 5px 20px rgba(0,0,0,.75);
 	border: 3px solid #fff;
 }
