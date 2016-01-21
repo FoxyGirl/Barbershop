@@ -14,6 +14,16 @@ var linkMap = document.getElementById('map');
 var popupMapClose = document.querySelector('.modal-map .modal-close');
 
 
+var timerError;
+console.log(timerError);
+
+function clearError() {
+console.log('clearError');
+	if (popupLogin.classList.contains('modal-error')) {
+		popupLogin.classList.remove('modal-error');
+	};
+}
+
 login.removeAttribute('required');
 password.removeAttribute('required');
 
@@ -31,17 +41,25 @@ linkLogin.addEventListener('click', function(e) {
 });
 
 formLogin.addEventListener('submit', function(e) {
-	e.preventDefault();
-	
-	if (popupLogin.classList.contains('modal-error')) {
-		popupLogin.classList.remove('modal-error');
-console.log(popupLogin.classList.contains('modal-error'));		
-	};
-	
+	e.preventDefault();	
 	
 	if (!(login.value && password.value)) {
 	//	e.preventDefault();	
-		popupLogin.classList.add('modal-error');		
+		popupLogin.classList.add('modal-error');
+console.log(timerError);
+		
+		if (timerError) {
+			clearTimeout(timerError);
+			timerError = 0;
+		};
+		
+		timerError = setTimeout(clearError, 505);
+		
+		
+	
+	//	setTimeout(clearError, 3000);
+console.log(timerError);
+	
 	} else {
 		localStorage.setItem('login', login.value);
 	};
